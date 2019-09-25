@@ -1,0 +1,168 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html{
+	font-size: 10px;
+	font-family: 'Roboto', sans-serif;
+
+}
+
+body{
+/*background-color: 	rgba(218,34,255,0.1);*/
+}
+#error{
+	transform: translateX(30%);
+	width: 60%;
+	padding: auto 0px;
+	margin-bottom: 10px;
+	text-align: center;
+
+}
+#error li{
+
+	background:#fa7280;
+	font-size: 20px;
+	list-style-type: none;
+	margin: 5px 5px;
+	color:  #fa7280;
+	padding: 2px;
+	border-radius: 30%;
+}
+#wrapper{
+
+	position: relative;
+	width: 90%;
+	height:100vh;
+	margin: 0  auto;
+	justify-content: center;
+	align-items: center;
+	left: 20%;
+	top: 30px;
+	display: block;
+
+}
+
+.form-container{
+	width: auto;
+	max-width: 40rem;
+	background-color: #fff;
+	position: relative;
+	padding-top: 10rem ;
+	box-shadow: 1px 10px  3rem rgba(0,0,0,0.3);
+	border-radius: 1rem;
+	z-index: 1;
+}
+
+.form-container::before{
+	content: "";
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 10rem;
+	/*background: linear-gradient(to left,#ee0979,#ff6a00);*/
+	background-color: #fa7280;
+	border-bottom-right-radius: 0%;
+	border-bottom-left-radius:70%;
+	z-index: -1;
+
+}
+.form-heading{
+	font-size: 2.5rem;
+	position: absolute;
+	color: #fff;
+	top: 3.5rem;
+	left: 50%;
+  transform: translateX(-50%);
+
+}
+
+form{
+	transform: translateX(10rem);
+	padding: 2rem 0;
+	background-color: #fff;
+    border: initial;
+		transform: inherit;
+		box-shadow: none;
+
+}
+
+
+.input-group{
+	width: 90%;
+	margin: 0 auto;
+	position: relative;
+	display: flex;
+	align-items: baseline;
+}
+
+.input-group input{
+	position: relative;
+	width: 100%;
+	padding:  1rem 0;
+	margin-top:0.5rem;
+	border: none;
+	outline: none;
+	font-size: 1.8rem;
+	color: #fa7280;
+
+}
+
+.input-group  > i{
+	font-size: 2rem;
+	margin-right: 1rem;
+	color: #fa7280;
+}
+.input-group .bar{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	background-color: rgb(0,0,0,.1);
+	width: 100%;
+	height: 1px;
+
+}
+
+.input-group .bar::before{
+	content: "";
+	position: absolute;
+	background-color: #fa7280;
+	width: 0;
+	height: 2px;
+	transition: width 650ms;
+}
+.input-group input:focus + .bar::before{
+	width: 100%;
+}
+
+.input-group button{
+	margin: 3rem auto;
+	padding: 1rem 5rem;
+	background:linear-gradient(to left, #000,#fa7280);
+	border: none;
+	color: #fff;
+	font-size: 2.5rem;
+	cursor: pointer;
+	border-radius: 3rem; 
+}
+
+.input-group button:focus,
+.input-group button:hover{
+	background:linear-gradient(to right, #000,#fa7280);
+
+
+}
+
+.switch-login{
+	text-align: center;
+}
+
+.switch-login a{
+	text-decoration: none;
+	color: #a1a1a1;
+	font-size: 1.5rem;
+
+}
+
+
